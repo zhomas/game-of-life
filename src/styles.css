@@ -1,0 +1,72 @@
+.App {
+  font-family: sans-serif;
+  font-size: 80%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid-container {
+  background: #547a86;
+  flex: 1 1;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.island {
+  width: 100%;
+  max-width: 100vh;
+  position: relative;
+}
+
+.island:after {
+  background: #547a86;
+  display: block;
+  content: '';
+  padding-bottom: 100%;
+}
+
+.controls {
+  background: #93c3d2;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10px;
+  flex: 0 1 250px;
+}
+
+.controls > div:last-child {
+  text-align: right;
+}
+
+input[type='range'] {
+  margin: 0;
+}
+
+.controls .buttons {
+  align-self: flex-start;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .App {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
